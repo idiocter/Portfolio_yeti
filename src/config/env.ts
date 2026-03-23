@@ -10,6 +10,7 @@ import ritikaImg from '@/assets/reetika.webp';
 import swornimKarkiImg from '@/assets/swornim_karki.webp';
 import swornimShresthaImg from '@/assets/Swornim_shrestha.jpg';
 import magishImg from '@/assets/magish.png';
+import nikeshImg from '@/assets/nikesh.webp';
 
 // Helper function to safely get env variables
 const getEnv = (key: string, defaultValue: string = ''): string => {
@@ -108,7 +109,7 @@ export const teamConfig = {
         { name: 'Swornim Karki', role: 'Backend Developer', specialty: 'Architecture & Systems', imageUrl: swornimKarkiImg },
         { name: 'Swornim Shrestha', role: 'Full Stack Developer', specialty: 'End-to-End Solutions', imageUrl: swornimShresthaImg },
         { name: 'Magish Gautam', role: 'Frontend Developer', specialty: 'UI/UX & Interaction', imageUrl: magishImg },
-        { name: 'Nikesh Deuja', role: 'Frontend Developer', specialty: 'Components & Styling' },
+        { name: 'Nikesh Deuja', role: 'Frontend Developer', specialty: 'Components & Styling', imageUrl: nikeshImg },
       ];
     }
     return parseDoubleSemicolonList(membersStr).map(member => {
@@ -126,7 +127,7 @@ export const projectConfig = {
   name: getEnv('VITE_PROJECT_NAME', 'BhatBhatify'),
   tagline: getEnv('VITE_PROJECT_TAGLINE', 'Revolutionizing Tours & Travel in Nepal'),
   description: getEnv('VITE_PROJECT_DESCRIPTION', 'BhatBhatify is our flagship project—a comprehensive tours and travel platform designed specifically for Nepal.'),
-  techStack: parseCommaList(getEnv('VITE_PROJECT_TECH_STACK', 'React,Node.js,MongoDB,Express,Tailwind')),
+  techStack: parseCommaList(getEnv('VITE_PROJECT_TECH_STACK', 'Next.js,T3 Stack,Prisma ORM,MongoDB')),
   features: parseCommaList(getEnv('VITE_PROJECT_FEATURES', 'Curated Nepali tour packages,Local guide connections,Secure booking system,Multi-language support')),
   cta: getEnv('VITE_PROJECT_CTA', 'View Live Demo'),
   ctaLink: getEnv('VITE_PROJECT_CTA_LINK', 'https://bhatbhatify.demo'),
