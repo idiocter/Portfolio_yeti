@@ -1,0 +1,90 @@
+/* Custom font imports - must be first */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light Mode - Himalayan Theme */
+    --background: 210 40% 98%; /* #F8FAFC - snow white */
+    --foreground: 222 47% 11%; /* #0F172A - mountain shadow black */
+    --card: 0 0% 100%; /* #FFFFFF - pure white */
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 224 76% 40%; /* #1E40AF - Himalayan blue */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 160 84% 29%; /* #059669 - Alpine green */
+    --secondary-foreground: 0 0% 100%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%; /* #64748B - mist gray */
+    --accent: 0 84% 50%; /* #DC2626 - Prayer flag red */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 214 32% 91%; /* #E2E8F0 - snow line */
+    --input: 214 32% 91%;
+    --ring: 224 76% 40%;
+    --radius: 0.625rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 224 76% 40%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 210 40% 96%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-ring: 224 76% 40%;
+  }
+
+  .dark {
+    /* Dark Mode - Night Mountain Theme */
+    --background: 222 47% 11%; /* #0F172A - night mountain */
+    --foreground: 210 40% 98%; /* #F8FAFC - snow white */
+    --card: 217 33% 17%; /* #1E293B - shadow valley */
+    --card-foreground: 210 40% 98%;
+    --popover: 217 33% 17%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 213 94% 68%; /* #60A5FA - glacier blue */
+    --primary-foreground: 222 47% 11%;
+    --secondary: 158 64% 52%; /* #34D399 - moonlit forest */
+    --secondary-foreground: 222 47% 11%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%; /* #94A3B8 - fog gray */
+    --accent: 0 91% 71%; /* #F87171 - sunset prayer flag */
+    --accent-foreground: 222 47% 11%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 215 28% 25%; /* #334155 - ridge line */
+    --input: 215 28% 25%;
+    --ring: 213 94% 68%;
+    --sidebar-background: 222 47% 11%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 213 94% 68%;
+    --sidebar-primary-foreground: 222 47% 11%;
+    --sidebar-accent: 217 33% 17%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 215 28% 25%;
+    --sidebar-ring: 213 94% 68%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Typography */
+.font-heading {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.font-body {
+  font-family: 'Inter', sans-serif;
+}
